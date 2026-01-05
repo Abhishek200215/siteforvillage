@@ -8,6 +8,11 @@
     <link rel="manifest" href="./manifest.json">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏘️</text></svg>">
     <title>ವೀರಪುರ - ನಮ್ಮ ಸ್ವರ್ಗ</title>
+
+    <!-- Add these 3 lines BEFORE your main <script> tag -->
+<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth-compat.js"></script>
     
     <style>
         /* ====== BASE STYLES ====== */
@@ -1144,24 +1149,21 @@
         </div>
     </footer>
 
-    <!-- Add these BEFORE your main script tag -->
-<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth-compat.js"></script>
+
 
     <script>
            // ========== FIREBASE CONFIGURATION ==========
-    // REPLACE THESE VALUES WITH YOUR OWN FROM FIREBASE CONSOLE
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyDjrLtPg5wCAHaD4NUi8TuhscGfcDF38V8",
-  authDomain: "veerapuravillage-526cb.firebaseapp.com",
-  projectId: "veerapuravillage-526cb",
-  storageBucket: "veerapuravillage-526cb.firebasestorage.app",
-  messagingSenderId: "57121765052",
-  appId: "1:57121765052:web:31d23ce02fa87e892a02b9",
-  measurementId: "G-W7LJ1JV9GR"
-};
+   // ========== FIREBASE CONFIGURATION ==========
+    // REPLACE WITH YOUR VALUES FROM FIREBASE CONSOLE
+    const firebaseConfig = {
+        apiKey: "AIzaSyDjrLtPg5wCAHaD4NUi8TuhscGfcDF38V8",
+        authDomain: "veerapuravillage-526cb.firebaseapp.com",
+        projectId: "veerapuravillage-526cb",
+        storageBucket: "veerapuravillage-526cb.firebasestorage.app",
+        messagingSenderId: "57121765052",
+        appId: "1:57121765052:web:66b062f49899ea7f2a02b9"
+        // Remove measurementId - we don't need analytics
+    };
 
     // ========== CORE VARIABLES ==========
     let currentLang = 'kn';
